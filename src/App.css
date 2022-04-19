@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Fugaz+One&display=swap");
+
+.App {
+  text-align: center;
+}
+.header-attempt {
+  background-color: rgb(202, 201, 201);
+  top: 0px;
+  min-width: 100%;
+  height: 100px;
+  position: fixed;
+}
+
+#outer-container {
+  min-height: 100vh;
+}
+
+#valorandom-logo {
+  position: fixed;
+  left: 60px;
+  top: 12px;
+}
+
+.App-logo {
+  pointer-events: none;
+  max-height: 75px;
+}
+
+.padding-div {
+  height: 100px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-button {
+  position: fixed;
+  height: 30px;
+  right: 106px;
+  top: 36px;
+  font-size: large;
+  font-weight: 700;
+  background-color: white;
+  border-radius: 3px;
+  border-style: none;
+  color: #4a4e61;
+  font-family: "Electrolize", sans-serif;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  box-shadow: inset 0 0 10px #a90000;
+}

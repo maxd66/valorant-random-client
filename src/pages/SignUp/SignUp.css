@@ -1,0 +1,24 @@
+#createAccount-container {
+  color: white;
+}
+
+#signUpSubmitButton {
+  font-family: "Electrolize", sans-serif;
+  margin: 5px;
+  padding: 3px;
+  border: none;
+  border-radius: 0px;
+  font-size: large;
+  font-weight: 500;
+}
+
+#createAccount-container input {
+  color: black;
+  padding: 5px;
+  margin: 3px;
+}
+
+#createAccount-container a {
+  margin: 5px;
+  color: rgb(163, 201, 235);
+}

@@ -1,0 +1,95 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"); */
+
+#profilePageContainer {
+  padding-top: 1px;
+  color: white;
+}
+
+#profilePageContainer button {
+  font-family: "Electrolize", sans-serif;
+  margin: 5px;
+  padding: 3px;
+  border: none;
+  border-radius: 0px;
+  font-size: large;
+  font-weight: 500;
+}
+
+#profilePageContainer h2 {
+  margin-bottom: 1px;
+}
+
+#profilePageContainer button:hover {
+  box-shadow: inset 0px 0px 10px rgb(126, 0, 0);
+  cursor: pointer;
+}
+
+#main-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#updateForm-container {
+  min-width: 45%;
+}
+
+#genStats-container {
+  min-width: 45%;
+}
+
+#updateForm-container label {
+  display: block;
+}
+
+.updateInput {
+  margin: 20px 0;
+}
+
+#agentListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.agentThumbnailContainer {
+  position: relative;
+  cursor: pointer;
+}
+
+.agentThumbnailContainer h3 {
+  position: absolute;
+  bottom: -17px;
+  right: 5px;
+  text-shadow: -1px -1px 3px white;
+  color: black;
+  font-family: "Fugaz One", cursive;
+}
+
+.agentThumbnail {
+  max-width: 150px;
+}
+
+.ult-symbol {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  max-width: 50px;
+}
+
+.caret-hidden {
+  caret-color: transparent;
+}
+
+@media screen and (max-width: 400px) {
+  #main-container {
+    flex-wrap: wrap-reverse;
+  }
+
+  #updateForm-container {
+    min-width: 100%;
+  }
+
+  #genStats-container {
+    min-width: 100%;
+  }
+}
