@@ -10,6 +10,22 @@
   border-radius: 0px;
   font-size: large;
   font-weight: 500;
+  cursor: pointer;
+}
+
+#signUpSubmitButton {
+  font-family: "Electrolize", sans-serif;
+  margin: 5px;
+  padding: 3px;
+  border: none;
+  border-radius: 0px;
+  font-size: large;
+  font-weight: 500;
+}
+
+#signUpSubmitButton:hover {
+  box-shadow: inset 0px 0px 10px rgb(126, 0, 0);
+  cursor: pointer;
 }
 
 #createAccount-container input {

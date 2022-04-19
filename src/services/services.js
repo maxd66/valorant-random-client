@@ -68,7 +68,7 @@ class ApiCalls {
 
   async updateUserHistory(data, userId, field, token) {
     try {
-      const url = `${dbLink}api/user/history/${userId}/${field}`;
+      const url = `${dbLink}/api/user/history/${userId}/${field}`;
       const response = await fetch(url, {
         method: "PUT",
         headers: {
