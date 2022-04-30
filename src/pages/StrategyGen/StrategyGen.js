@@ -14,7 +14,9 @@ function StrategyGen() {
     savedPlayerValue: 1,
   });
   const [validFilter, setValidFilter] = useState(false);
-  const [filteredApiResult, setFilteredApiResult] = useState([]);
+  const [filteredApiResult, setFilteredApiResult] = useState(
+    JSON.parse(localStorage.getItem("filteredStrategies")) || []
+  );
   const [result, setResult] = useState([]);
   const [wolStats, setWolStats] = useState([]);
   const [stratLoading, setStratLoading] = useState(false);
@@ -145,6 +147,10 @@ function StrategyGen() {
     const playerCountFilteredResponse = response.filter((strategy) => {
       return strategy.recommendedMinimumPlayers <= filterState.playerSlider;
     });
+    localStorage.setItem(
+      "filteredStrategies",
+      JSON.stringify(playerCountFilteredResponse)
+    );
     setFilteredApiResult(playerCountFilteredResponse);
     const randomStrategy = randomize(playerCountFilteredResponse);
     localStorage.setItem("strategyState", JSON.stringify(filterState));
