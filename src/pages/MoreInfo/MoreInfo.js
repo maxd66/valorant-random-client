@@ -269,7 +269,7 @@ function MoreInfo() {
               <fieldset>
                 <legend>Zoom Multiplier</legend>
                 <h3>
-                  {apiResults?.weaponStats.adsStats
+                  {apiResults?.weaponStats?.adsStats
                     ? apiResults.weaponStats.adsStats?.zoomMultiplier + " x"
                     : "N/A"}
                 </h3>
