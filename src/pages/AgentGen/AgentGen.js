@@ -53,7 +53,7 @@ function AgentGen() {
         <img
           id="generatedAgentPortrait"
           alt="portrait of agent"
-          src={generatedAgent.bustPortrait}
+          src={generatedAgent.fullPortrait}
         />
         <a id="moreInfo-link" href={`/moreInfo?agent=${generatedAgent.uuid}`}>
           More about {generatedAgent.displayName}

@@ -94,7 +94,7 @@ function MoreInfo() {
                 <p>{apiResults?.description}</p>
                 <img
                   alt={`display icon for ${apiResults?.displayName}`}
-                  src={apiResults?.fullPortraitV2}
+                  src={apiResults?.fullPortrait}
                   id="agent-portrait"
                 />
               </div>
